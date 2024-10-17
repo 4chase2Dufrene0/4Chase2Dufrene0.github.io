@@ -66,7 +66,7 @@ $(function () {
 
     createCollectable("diamond",1150,50,6,0.7)
 
-    createCollectable("kennedi",1350,450,6,0.7)
+     createCollectable("kennedi",1350,450,6,0.7)
 
     createCollectable("database",0,500,6,0.7)
 
