@@ -152,14 +152,12 @@ $(document).ready(function () {
     // this bounces off the bottom wall
     else if (ghost.y > boardHeight) {
       ghost.y -= ghost.speedY;
-      ghost.speedX *= -1;
+      ghost.speedY *= -1;
     }
   }
 
   // this redraws the ghost's position on the screen
   function updateGhostOnScreen(ghost) {
-    maxGhosts = 1;
-
     // these lines redraw the ghost's position
     $(ghost.id).css("left", ghost.x);
     $(ghost.id).css("top", ghost.y);
