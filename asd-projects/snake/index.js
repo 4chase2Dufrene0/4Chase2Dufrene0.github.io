@@ -125,7 +125,20 @@ function moveSnake() {
     
     HINT: The snake's head will need to move forward 1 square based on the value
     of snake.head.direction which may be one of "left", "right", "up", or "down"
+    
   */
+ if (snake.head.direction === "left") {
+  snake.head.column = snake.head.column - 1;
+}
+else if (snake.head.direction === "right") {
+  snake.head.column.direction = snake.head.column + 1;
+}
+else if (snake.head.direction === "up") {
+  snake.head.row.direction = snake.head.row - 1;
+}
+else if (snake.head.direction === "down") {
+  snake.head.row.direction = snake.head.row + 1;
+}
 }
 
 // TODO 9: Create a new helper function
